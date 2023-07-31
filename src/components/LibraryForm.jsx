@@ -28,7 +28,7 @@ const LibraryForm = () => {
   return (
     <div>
       <div>
-        <label htmlFor="country">Country</label>
+        <label htmlFor="country">My Country</label>
         <FlagsSelect
           className="country-select"
           countries={countries.map((country) => country.isoCode)}
@@ -38,7 +38,7 @@ const LibraryForm = () => {
         />
       </div>
       <div>
-        <label htmlFor="city">City</label>
+        <label htmlFor="city">My City</label>
         <Select
           options={cityOptions}
           value={cityOptions.find((option) => option.value === selectedCity)}
